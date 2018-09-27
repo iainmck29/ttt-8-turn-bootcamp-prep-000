@@ -6,9 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+<<<<<<< HEAD
 def valid_move?(board, index)
 
 	if !position_taken?(board, index) && index.between?(0,8)
+=======
+def valid_move?(board, position)
+
+	if !position_taken?(board, position) && position.between?(0,8)
+>>>>>>> b7327ab4cb06fc0808478c111ef85f0eab409069
 		true
  	else
 		false
@@ -41,4 +47,5 @@ if valid_move?(board, index) == true
   display_board(board)
 else turn(board)
 end
+
 end
